@@ -20,7 +20,7 @@ jobs:
             });
 
             github.projects.createCard({
-              column_id: {{columnID}},
               content_id: context.payload.issue.id,
-              content_type: "Issue"
+              content_type: "Issue",
+              column_id: 1234567,
             });
